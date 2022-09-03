@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tops HRMS.in human resource solutions for Employee</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap-grid.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src='js/jquery.slim.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/bootstrap.bundle.js'></script>
+    <script src='js/login.js'></script>
+</head>
+<body  class="bg-white">
+   
+    <!-- header start here -->
+     <div class="container-fluid header">
+         <div class="row">
+      <div class="col-md-8 header-logo ml-5">
+          <img src="images/logo-header.png">
+      </div>
+      <div class="col-md-3 myaccount mt-2 ml-5">
+          <ul class="header-navbar">
+              <li class="dropdown"><img src="images/RJ123.png" class="img-fluid rounded-circle w-25" style="width: 15% !important;"><a href="" class="dropdown-toggle" data-toggle="dropdown">Brijesh Pandey</a> 
+              <ul class="dropdown-menu bg-dark">
+                  <li><a href="View_Profile.html"><i class="bi bi-person"></i> My Profile</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#chng"><i class="bi bi-lock-fill"></i> ChangePassword</a></li>
+                  <li><a href="" onclick="lg()"><i class="bi bi-power"></i> Logout</a></li>
+              </ul> 
+                 
+            </li>
+          </ul>
+      </div>
+      </div>
+     </div>
+    <!-- menu start here -->
+
+    <nav class="navbar navbar-expand-md bg-dark">
+        
+       <a href="" class="navbar-brand text-white"><img src="images/logo-header.png" class="img-fluid w-75"></a> 
+
+       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#togg">
+           <span class="bi bi-list text-white" style="font-size: 35px;"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="togg">
+        <ul class="navbar-link">
+            <li><a href="TopsDashboard.html"><i class="bi bi-house-door"></i> Dashboard</a></li>
+            <li class="dropdown"><a href="" class="dropdown-toggle" data-toggle="dropdown">Myrequest</a> 
+                <ul class="dropdown-menu bg-dark text-white" style="min-width: 240px;">
+                    <li><a href=""><i class="bi bi-person"></i> Leave Request</a></li>
+                    <li><a href=""><i class="bi bi-calendar"></i> Shift Request</a></li>
+                    <li><a href=""><i class="bi bi-calendar"></i> Overtime Request</a></li>
+                </ul> 
+                   
+              </li>
+            <li><a href=""><i class="bi bi-bookmark"></i> Report</a></li>
+            <li><a href=""><i class="bi bi-question-circle"></i> Help</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <!-- content start here -->
+
+    <div class="container content">
+        <div class="row">
+            
+            <div class="col-md-6 mt-4">
+                <div class="card border border-danger">
+                    <div class="card-header text-white bg-danger"><i class="bi bi-calculator-fill"></i> <b>My Monthly Attendance</b>
+                    </div>
+                    <div class="card-body">
+
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-md-6 mt-4">
+                <div class="card request">
+                    <div class="card-header text-white request1"><i class="bi bi-hourglass"></i> <b>My Pending Request
+                    </b>
+                    </div>
+                    <div class="card-body">
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mt-4">
+                <div class="card birthday">
+                    <div class="card-header text-white birthday1"><i class="bi bi-hourglass"></i> <b>Celebrations
+                    </b>
+                    </div>
+                    <div class="card-body">
+
+                      <marquee direction="up">
+                       <b class="text-danger"><i class="bi bi-calendar-date"></i> Birthday</b>
+                       <p>[RJ123] Brijesh Kumar Pandey (04-10-1990)</p> 
+
+                       </marquee>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mt-4">
+                <div class="card border border-info">
+                    <div class="card-header text-white bg-info"><i class="bi bi-hourglass"></i> <b>My Pending Request
+                    </b>
+                    </div>
+                    <div class="card-body">
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- footer start here -->
+
+    <div class="container-fluid footer bg-dark p-3 mt-5">
+        <p class="text-white text-left ml-5">Copyright © 2016 TOPS Technologies</p>
+    </div>
+
+
+
+    <!-- change password model -->
+
+    <div class="modal fade" role="dialog" id="chng">
+        <div class="modal-dialog">
+            <div class="modal-content p-5">
+              
+                <h4 class="text-center">Change Your Password  <b class="float-right"><button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">&times;</button></b></h4>
+                <hr class="border border-2 border-info w-50">
+                <form method="post">
+                <div class="form-group">
+                <label>Old Password *</label>
+                <input type="password" name="opass" placeholder="Old password *" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>New Password *</label>
+                    <input type="password" name="npass" placeholder="New password *" required class="form-control">
+                    </div>
+
+                <div class="form-group">
+                    <label>Confirm Password *</label>
+                    <input type="password" name="cpass" placeholder="Confirm password *" required class="form-control">
+                    </div>
+
+                <div class="form-group">
+                    
+                    <input type="submit" name="submit"  class="btn btn-lg btn-info" value="Submit">
+                    </div>
+                </form>
+
+                  
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
